@@ -28,13 +28,74 @@ code {
   height: 100vh;
 }
 
+.container {
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+nav ul {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+li {
+  padding-left: 1em;
+}
+
+#logo img {
+  height: 5vh;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.slideArea {
+  width: 90vw;
+  overflow: hidden;
+}
+
+.display {
+  display: flex;
+  height: 90vh;
+  width: 90vw;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+  /* Hiding scroll bars */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: scroll;
+}
+
+/* Hiding scroll bar in Chrome ::crosses fingers:: */
+.display::-webkit-scrollbar {
+  display: none;
+}
+
+.page {
+  width: 90vw;
+  margin: auto;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+.main {
+  display: flex;
+}
+
+.main > div {
+  flex: 1 1 0;
+}
+
 h1 {
   margin: 0;
   font-size: 5vw;
   font-weight: 300;
-}
-
-.container {
-  position: absolute;
-  top: 0;
 }
