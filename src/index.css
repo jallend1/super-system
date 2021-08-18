@@ -80,8 +80,8 @@ li {
 }
 
 .page {
+  height: 90%;
   width: 90vw;
-  margin: auto;
   scroll-snap-align: start;
   flex-shrink: 0;
 }
@@ -98,4 +98,17 @@ h1 {
   margin: 0;
   font-size: 5vw;
   font-weight: 300;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.contact {
+  width: 300px;
+  padding: 2em;
+  text-align: center;
+  background: linear-gradient(180deg, #6f8ffd, #a887e5);
 }
