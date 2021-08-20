@@ -114,3 +114,23 @@ h1 {
   border-radius: 10px;
   font-weight: bold;
 }
+
+.work {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 80vw;
+}
+
+.project {
+  text-align: center;
+  height: 300px;
+}
+
+.project img {
+  width: 250px;
+  transition: width 1s;
+}
+
+.project img:hover {
+  width: 300px;
+}
