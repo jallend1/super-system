@@ -1,13 +1,13 @@
 const Main = () => {
   return (
-    <div className='page main'>
+    <div className='page main' id='main'>
       <div>
         <h1>Focusing on the web, so you can focus on your business.</h1>
       </div>
       <div className='action'>
-        <div className='contact'>
-          <a href='#contact-form'>Get in touch.</a>
-        </div>
+        <a href='#contact-form'>
+          <div className='contact'>Get in touch.</div>
+        </a>
       </div>
       <div id='contact-form' className='contact-form'>
         <div className='modal'>
@@ -29,6 +29,7 @@ const Main = () => {
               <input name='email' type='email' />
             </label>
           </form>
+          <h6>Contact Form Design Is My Passion.</h6>
         </div>
       </div>
     </div>

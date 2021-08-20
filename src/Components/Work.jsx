@@ -1,6 +1,6 @@
 const Work = () => {
   return (
-    <div className="page work">
+    <div className="page work" id="work">
       {[1, 2, 3, 4].map((project) => {
         return (
           <div className="project" key={project}>
