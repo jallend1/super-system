@@ -9,7 +9,7 @@ function App() {
         <NavBar />
         <div className="slideArea">
           <div className="display">
-            <Main />
+            <Main id="main"/>
             <Work />
           </div>
         </div>

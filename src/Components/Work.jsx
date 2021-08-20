@@ -3,7 +3,7 @@ const Work = () => {
     <div className="page work">
       {[1, 2, 3, 4].map((project) => {
         return (
-          <div className="project">
+          <div className="project" key={project}>
             <h2>Project # {project}</h2>
             <img
               src={`./images/landscape-${project}.jpg`}

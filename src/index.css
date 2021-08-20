@@ -6,7 +6,7 @@ html {
   margin: 0;
   padding: 0;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   max-width: 100vw;
 }
 
@@ -17,12 +17,12 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 .background {
-  background: url("./images/2dogs.jpg") no-repeat center center fixed;
+  background: url('./images/2dogs.jpg') no-repeat center center fixed;
   background-size: cover;
   filter: brightness(0.3);
   height: 100vh;
@@ -88,6 +88,7 @@ li {
 
 .main {
   display: flex;
+  padding: 2em;
 }
 
 .main > div {
@@ -98,6 +99,10 @@ h1 {
   margin: 0;
   font-size: 5vw;
   font-weight: 300;
+}
+
+a {
+  text-decoration: none;
 }
 
 .action {
@@ -113,6 +118,53 @@ h1 {
   background: linear-gradient(180deg, #6f8ffd, #a887e5);
   border-radius: 10px;
   font-weight: bold;
+}
+
+.contact a {
+  color: #eee;
+}
+
+label {
+  display: block;
+  margin: 1.2em;
+}
+
+.contact-form {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.contact-form:target {
+  visibility: visible;
+}
+
+.modal {
+  padding: 0 2em;
+  background: #eee;
+  color: black;
+  position: relative;
+  border-radius: 5px;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+}
+
+.close a {
+  color: black;
+}
+
+.modal h2 {
+  text-align: center;
 }
 
 .work {
