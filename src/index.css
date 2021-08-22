@@ -6,7 +6,7 @@ html {
   margin: 0;
   padding: 0;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   max-width: 100vw;
 }
 
@@ -17,12 +17,12 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 .background {
-  background: url('./images/2dogs.jpg') no-repeat center center fixed;
+  background: url("./images/2dogs.jpg") no-repeat center center fixed;
   background-size: cover;
   filter: brightness(0.3);
   height: 100vh;
